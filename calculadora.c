@@ -9,15 +9,15 @@ setlocale(LC_ALL, "portuguese");
 
 char escolha;
 float numero1, numero2, adicao, subtracao, divisao, multiplicacao;
-
-printf("\n°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°\n");
-printf("°\n°\t bem-vindo a calculadora         °\n");
-printf("°\n°\t tecle 1 para Adição             °\n");
-printf("°\n°\t tecle 2 para Subtração          °\n");
-printf("°\n°\t tecle 3 para divisão            °\n");
-printf("°\n°\t tecle 4 para Multiplicação      °\n");
-printf("°\n°\t tecle 0 para sair               °\n");
-printf("\n°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°\n");
+label:
+printf("\nÂ°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°\n");
+printf("Â°\nÂ°\t bem-vindo a calculadora         Â°\n");
+printf("Â°\nÂ°\t tecle 1 para AdiÃ§Ã£o             Â°\n");
+printf("Â°\nÂ°\t tecle 2 para SubtraÃ§Ã£o          Â°\n");
+printf("Â°\nÂ°\t tecle 3 para divisÃ£o            Â°\n");
+printf("Â°\nÂ°\t tecle 4 para MultiplicaÃ§Ã£o      Â°\n");
+printf("Â°\nÂ°\t tecle 0 para sair               Â°\n");
+printf("\nÂ°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°\n");
 printf("\n\nescolha:\t\n"); scanf("%c", &escolha);
 
 system("cls");
@@ -36,7 +36,7 @@ case '1':
 
     system("cls");
 
-    printf("o resultado da soma é: %1.f", adicao);
+    printf("o resultado da soma Ã©: %1.f", adicao);
 
  break;
 
@@ -51,7 +51,7 @@ case '2':
 
     system("cls");
 
-    printf("o resultado da soma é: %1.f", subtracao);
+    printf("o resultado da subtraÃ§Ã£o Ã©: %1.f", subtracao);
 
 ;break;
 
@@ -66,7 +66,7 @@ case '3':
 
     system("cls");
 
-    printf("o resultado da soma é: %1.f", divisao);
+    printf("o resultado da divisÃ£o Ã©: %1.f", divisao);
 
 ;break;
 
@@ -81,13 +81,13 @@ case '4':
 
     system("cls");
 
-    printf("o resultado da soma é: %1.f", multiplicacao);
+    printf("o resultado da multiplicaÃ§Ã£o Ã©: %1.f", multiplicacao);
 
 ;break;
 
 case '0': exit(0); break;
 
-default:printf("\nSYNTAX ERROR\n");
+default:printf("\nSYNTAX ERROR\n"); system("pause"); system("cls"); goto label;
 }
 
 
